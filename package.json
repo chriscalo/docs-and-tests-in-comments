@@ -1,0 +1,20 @@
+{
+  "name": "jsdoc-testing-and-docs",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test:autodoc": "autodoc --test --verbose index.js",
+    "perf:autodoc": "autodoc --perf index.js",
+    "docs:documentation": "documentation build index.js --format=md > documentation.md",
+    "docs:jsdoc2md": "jsdoc2md index.js > jsdoc2md.md",
+    "test:jsdoctest": "mocha --require jsdoctest index.js"
+  },
+  "devDependencies": {
+    "autodoc": "^0.6.4",
+    "documentation": "^8.1.2",
+    "jsdoc-to-markdown": "^4.0.1",
+    "jsdoctest": "^1.7.1",
+    "mocha": "^5.2.0"
+  }
+}
